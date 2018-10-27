@@ -12,11 +12,12 @@
                 <RowDefinition Height="Auto"/>                
             </Grid.RowDefinitions>
             <Image Grid.Row="0" Source="logocine.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
-
+    
             <StackLayout Grid.Row="1" Padding="30,20">
-                <Entry Placeholder="Ingrese su Usuario" PlaceholderColor="White" TextColor="White"></Entry>
-                <Entry Placeholder="Ingrese Password" PlaceholderColor="White" IsPassword="True" TextColor="White"></Entry>
-                <Button Text="Iniciar Sesión" BackgroundColor="#001BDE" BorderRadius="20" TextColor="#000C43"></Button>
+                <ActivityIndicator x:Name="loginActivity" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Entry x:Name="user" Placeholder="Ingrese su Usuario" PlaceholderColor="White" TextColor="White"></Entry>
+                <Entry x:Name="password" Placeholder="Ingrese Password" PlaceholderColor="White" IsPassword="True" TextColor="White"></Entry>
+                <Button x:Name="loginboton" Text="Iniciar Sesión" BackgroundColor="#001BDE" BorderRadius="20" TextColor="#000C43"></Button>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="¿Recuperar Contraseña?"/>
                     <Label Text="Registrarse" HorizontalOptions="EndAndExpand" FontAttributes="Bold"/>
