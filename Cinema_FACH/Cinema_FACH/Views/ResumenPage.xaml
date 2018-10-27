@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cinema_FACH.Views.ResumenPage">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Text="Titulo"/>
+        <Label Grid.Row="0" Grid.Column="1" Text="{Binding Nombre}"/>
+
+        <Label Grid.Row="1" Grid.Column="0" Text="Fecha"/>
+        <Label Grid.Row="1" Grid.Column="1" Text="{Binding FechaEstreno}"/>
+
+        <Label Grid.Row="2" Grid.Column="2" Text="Cantidad Boletas"/>
+        <Label Grid.Row="2" Grid.Column="1" Text=""/>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Grid.Row="2" Grid.Column="2" Text="{Binding Cinema}"/>
+            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Sala}"/>
+            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Ciudad}"/>
+            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Precio}"/>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
